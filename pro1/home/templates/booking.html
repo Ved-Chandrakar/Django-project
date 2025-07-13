@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="{% static 'booking/book.css' %}" />
+</head>
+
+<body>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+        <label for="street">Street:</label><br>
+        <input type="text" id="street" name="street"><br>
+        <label for="number">Number:</label><br>
+        <input type="text" id="number" name="number"><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br>
+        <label for="postcode">Post Code:</label><br>
+        <input type="text" id="postcode" name="postcode"><br>
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country"><br>
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin"><br>
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout"><br>
+        <label for="people">Number of People:</label><br>
+        <input type="number" id="people" name="people"><br>
+        <label for="room">Room Type:</label><br>
+        <select id="room" name="room">
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="superior">Superior</option>
+        </select><br>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

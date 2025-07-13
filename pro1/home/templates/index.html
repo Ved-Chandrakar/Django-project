@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature's Nest – Farmhouse & Resort</title>
+  <link rel="stylesheet" href="{% static 'home/style.css' %}" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1 class="slide-in">Nature's Nest</h1>
+      <p class="fade-in">An escape into nature's arms – luxury in simplicity</p>
+      <a href="#booking" class="btn pulse">Book Your Stay</a>
+    </div>
+  </header>
+
+  <section class="about section">
+    <h2 class="fade-in">About Us</h2>
+    <p class="fade-in">Nestled in lush greenery, our eco-resort offers a serene escape from city life. Reconnect with nature, indulge in organic cuisine, and experience true relaxation.</p>
+    <img src="{% static 'images/farmhouse.webp' %}" alt="Farmhouse" class="img-animate"/>
+  </section>
+
+  <section class="gallery section">
+    <h2 class="slide-in">Gallery</h2>
+    <div class="gallery-grid fade-in">
+      <img src="{% static 'images/resort.jpg' %}" alt="Resort" />
+      <img src="{% static 'images/lawn.webp' %}" alt="Green Farm" />
+      <img src="{% static 'images/swimming pool.webp' %}" alt="Pool" />
+      <img src="{% static 'images/room.webp' %}" alt="Room" />
+    </div>
+  </section>
+
+  <section id="booking" class="booking section">
+    <h2 class="fade-in">Book Your Stay</h2>
+    <p class="fade-in">Experience peace, privacy, and personalized service.</p>
+    <button onclick="window.location.href='http://127.0.0.1:8000/booking-page/'" class="btn pulse">Check Availability</button>
+
+  </section>
+
+  <footer class="footer fade-in">
+    <p style="color: black;">📍 123 Greenway Road, Countryside | 📞 +91 98765 43210 | 📧 info@naturesnest.com</p>
+  </footer>
+
+  <script src="{% static 'home/script.js' %}"></script>
+</body>
+</html>
